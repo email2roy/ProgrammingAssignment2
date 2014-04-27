@@ -1,6 +1,6 @@
 ## cachematrix.R
 ## Cache the matrix and its inverse value if it has been computed before, it can
-## be looked up in the cache rather than recomputed of matrix everytime 
+## be looked up in the cache rather than recomputed of matrix every time 
 
 ## makeCacheMatrix 
 ## This function allows you to store the matrix and the inverse. You can 
@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve
 ## This function allows you to solve the inverse of a square matrix. It first 
-## check if makeCacheMatrix has the cached inverse, if not it will compute the
+## checks if makeCacheMatrix has the cached inverse, if not it will compute the
 ## inverse and store it back to the makeCacheMatrix
 ##
 ## @param x makeCacheMatrix
@@ -46,5 +46,4 @@ cacheSolve <- function(x, ...) {
         x$setinverse(i)
         ## Return a matrix that is the inverse of 'x'
         i
-        
 }
